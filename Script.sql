@@ -93,10 +93,10 @@ SELECT
 	name,
 	avg_price,
 	round((avg(value)) / avg_price,2) as quantity
-FROM t_jakub_bocek_project_sql_primary_final tjbpspf 
-WHERE (name LIKE 'mléko%' OR name LIKE 'chléb%') AND (year_table = (
-	SELECT min(year_table) FROM t_jakub_bocek_project_sql_primary_final tjbpspf ) OR year_table = (
-	SELECT max(year_table) FROM t_jakub_bocek_project_sql_primary_final tjbpspf ))
+FROM t_jakub_bocek_project_sql_primary_final pf 
+WHERE (name = 'Mléko polotučné pasterované' OR name = 'Chléb konzumní kmínový') AND (year_table = (
+	SELECT min(year_table) FROM t_jakub_bocek_project_sql_primary_final pf ) OR year_table = (
+	SELECT max(year_table) FROM t_jakub_bocek_project_sql_primary_final pf ))
 GROUP BY year_table, name_industry_branch, name 
 ORDER BY quantity DESC 
 
@@ -119,7 +119,7 @@ FROM
 			tab1.name,
 			tab1.avg_price AS price1,
 			tab2.avg_price AS price2,
-			Round(tab2.avg_price/tab1.avg_price * 100, 2) AS grad
+			round(tab2.avg_price/tab1.avg_price * 100, 2) AS grad
 		FROM (SELECT year_table, name, avg_price 
 			FROM t_jakub_bocek_project_sql_primary_final
 			GROUP BY year_table, name) tab1	
@@ -226,7 +226,7 @@ JOIN (SELECT
 		`year`,
 		GDP 
 	FROM t_jakub_bocek_project_sql_secondary_final
-	WHERE country LIKE ('%czech%')) tsf2
+	WHERE country = ('Czech Republic')) tsf2
 	ON tsf.`year` = tsf2.`year`+1
 JOIN (
 	SELECT 
@@ -258,7 +258,7 @@ JOIN (
 		ON tpf.year_table = next_year.year_table + 1
 	GROUP BY tpf.year_table) wage_tab
 	ON tsf.`year` = wage_tab.year_table
-WHERE tsf.country LIKE ('%czech%')
+WHERE tsf.country = ('Czech Republic')
 ORDER BY `year`	
 
 
