@@ -136,7 +136,7 @@ WHERE ranking = 1
 SELECT 
 	com_year,
 	name,
-	min_price_percente
+	min_price_percente*100-100 AS inc_precent
 FROM (SELECT 
 		price_tab.year_table_2 AS com_year,
 		name,	
