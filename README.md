@@ -14,7 +14,7 @@ Na tabulku economies připojena tabulka countries a odstraněno jméno země z e
 **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**  
   
 Tabulka je vytvořena, aby ukazovala, v kterém odvětví a roce došlo k poklesu mezd v ostatních nezobrazených údajích byla mzda na stejné úrovni nebo rostla. Vidíme, že nejvíce poklesu bylo v odvětví těžby a dobývání, a to hned ve čtyřech rocích. Otázku proč bychom zodpověděli, pokud bychom měli údaje o zaměstnancích a jejich ukončení/zahájení pracovního poměru.  
-**Odpověď:**  
+#### Odpověď:  
 Nejvícekrát došlo ke snížení mzdy v oblasti těžby a dobívání. Co se týče let, tak nejhorší rok byl 2013, kdy se snižovalo v 11 odvětvích.  
 
 ### Výzkumná otázka č. 2  
