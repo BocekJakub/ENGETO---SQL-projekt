@@ -1,10 +1,14 @@
 # Dokumentace k projektu SQL
 
+## Vytvořené tabulky  
+
 ### Tabulka č.1  
 Na tabulku czechia_payroll byly připojeny vedlejší tabulky czechia_payroll pro popis hodnot ve sloupcích a připojena tabulka cen ke každé průměrné mzdě pro možnost porovnání. Z tabulky mezd vybrány pouze údaje mezd. Ceny jsou zprůměrovány z hodnot za celou republiku. Z tabulky cen připojeno jméno položky, rok ceny a průměrná cena. Propojení tabulek mzdy a cen je přes rok sběru dat. Ve výsledné tabulce je uvedeno id zaměstnavatele, hodnota mzdy, jednotka mzdy, pojmenování průměrné hrubé mzdy, údaj o jakou mzdu jde, odvětví, rok odečtu, jméno produktu a průměrná cena v daném roce.  
 
 ### Tabulka č.2  
 Na tabulku economies připojena tabulka countries a odstraněno jméno země z economies a přejmenována populace na populace v roce.  
+
+## Výzkumné otázky  
 
 ### Výzkumná otázka č. 1  
 **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**  
@@ -38,6 +42,6 @@ Vidíme, že vyjma roku 2014 v každém roce byl nárust cen v§či nějakému o
 ### Výzkumná otázka č. 5  
 **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?**  
   
-Připravena tabulka ve které jsou vyfiltrovány údaje HDP pro Českou Republiku z tabulky secondary a připojeny údaje s růstem cen a mezd z tabulky primary. Porovnávají se pouze roky kde jsou hodnoty ve všech sloupcích. 
+Připravena tabulka ve které jsou vyfiltrovány údaje HDP pro Českou Republiku z tabulky secondary a připojeny údaje s růstem cen a mezd z tabulky primary. Porovnávají se pouze roky kde jsou hodnoty ve všech sloupcích.  
 **Odpověď:**  
 Z generované tabulky můžeme vidět, že závislost na změně HDP a ve změnách mezd nebo potravin není.
