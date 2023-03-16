@@ -9,33 +9,35 @@ Na tabulku economies připojena tabulka countries a odstraněno jméno země z e
 ### Výzkumná otázka č. 1  
 **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**  
   
-Tabulka je vytvořena, aby ukazovala, v kterém odvětví a roce došlo k poklesu mezd v ostatních nezobrazených údajích byla mzda na stejné úrovni nebo rostla. Vidíme, že nejvíce poklesu bylo v odvětví těžby a dobývání, a to hned ve čtyřech rocích. Otázku proč bychom zodpověděli, pokud bychom měli údaje o zaměstnancích a jejich ukončení/zahájení pracovního poměru. Co se týče let tak nejhorší rok byl 2013 kdy se snižovalo v nejvíce odvětvích.  
+Tabulka je vytvořena, aby ukazovala, v kterém odvětví a roce došlo k poklesu mezd v ostatních nezobrazených údajích byla mzda na stejné úrovni nebo rostla. Vidíme, že nejvíce poklesu bylo v odvětví těžby a dobývání, a to hned ve čtyřech rocích. Otázku proč bychom zodpověděli, pokud bychom měli údaje o zaměstnancích a jejich ukončení/zahájení pracovního poměru.  
 **Odpověď:**  
-
+Nejvícekrát došlo ke snížení mzdy v oblasti těžby a dobívání. Co se týče let, tak nejhorší rok byl 2013, kdy se snižovalo v 11 odvětvích.  
 
 ### Výzkumná otázka č. 2  
 **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**  
   
-Tabulka je vytvořena, aby ukazovala, pro každé odvětví a v daných letech počet produktů jež si je možné koupit za mzdu. Nejlépe jsou na tom odvětví Informační a komunikační činnosti a Peněžnictví a pojišťovnictví v obou vymezených letech. Nejhůře je na tom oblast Ubytování, stravování a pohostinství.  
+Tabulka je vytvořena, aby ukazovala, pro každé odvětví a v daných letech počet produktů jež si je možné koupit za mzdu.  
 **Odpověď:**  
-
+Nejlépe jsou na tom odvětví Informační a komunikační činnosti a Peněžnictví a pojišťovnictví v obou vymezených letech, kde si mohou koupit chleba kolem cca 2 750 kusů a mléka cca 2 500 litů. Nejhůře je na tom oblast Ubytování, stravování a pohostinství kter= si v daných letech mohlo dovolit koupit cca 750 kc chleba a cca 800-900 litrů mléka.
 
 ### Výzkumná otázka č. 3  
 **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuálně meziroční nárůst)?**  
   
 Zde jsou připraveny dvě tabulky, a to pro oblast případného poklesu tak čistě jen nárustu. V případě poklesu cen vidíme, kolik procentuálně stojí komodita s největším poklesem oproti předchozímu roku. Např. v roce 2008 stojí konzumní brambory 76,45% ceny z roku 2007. V případě že nás zajímá zdražení, tak použijeme SQL pro druhou tabulku.  
 **Odpověď:**  
-
+Nejnižší nárůst byl v 2009 u Rostlinného roztiratelného tuku. Největší pokles ceny byl v roce 2007 u Rajských jablek červených kulatých.
 
 ### Výzkumná otázka č. 4  
 **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**  
   
 Je vytvořena tabulka, která nám ukazuje v daném roce rozdíl o kolik narostla cena vůči mzdě. Tabulka je vytvořena pro každé odvětví a komoditu. Uvedený údaj je rozdíl nárůstu mzdy a cen potraviny.  
 **Odpověď:**  
+Vidíme, že vyjma roku 2014 v každém roce byl nárust cen v§či nějakému odvětví vyšší než 10 %.
 
 
 ### Výzkumná otázka č. 5  
 **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?**  
   
+Připravena tabulka ve které jsou vyfiltrovány údaje HDP pro Českou Republiku z tabulky secondary a připojeny údaje s růstem cen a mezd z tabulky primary. Porovnávají se pouze roky kde jsou hodnoty ve všech sloupcích. 
 **Odpověď:**  
-Z tabulky můžeme vidět, že závislost na změně HDP není ve změnách mezd nebo potravin vidět. Každá proměnná se mění jiným směrem.
+Z generované tabulky můžeme vidět, že závislost na změně HDP a ve změnách mezd nebo potravin není.
