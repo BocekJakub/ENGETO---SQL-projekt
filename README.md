@@ -21,21 +21,21 @@ Nejvícekrát došlo ke snížení mzdy v oblasti těžby a dobívání. Co se t
 **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**  
   
 Tabulka je vytvořena, aby ukazovala, pro každé odvětví a v daných letech počet produktů jež si je možné koupit za mzdu.  
-**Odpověď:**  
+#### Odpověď:  
 Nejlépe jsou na tom odvětví Informační a komunikační činnosti a Peněžnictví a pojišťovnictví v obou vymezených letech, kde si mohou koupit chleba kolem cca 2 750 kusů a mléka cca 2 500 litů. Nejhůře je na tom oblast Ubytování, stravování a pohostinství kter= si v daných letech mohlo dovolit koupit cca 750 kc chleba a cca 800-900 litrů mléka.
 
 ### Výzkumná otázka č. 3  
 **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuálně meziroční nárůst)?**  
   
 Zde jsou připraveny dvě tabulky, a to pro oblast případného poklesu tak čistě jen nárustu. V případě poklesu cen vidíme, kolik procentuálně stojí komodita s největším poklesem oproti předchozímu roku. Např. v roce 2008 stojí konzumní brambory 76,45% ceny z roku 2007. V případě že nás zajímá zdražení, tak použijeme SQL pro druhou tabulku.  
-**Odpověď:**  
+#### Odpověď:  
 Nejnižší nárůst byl v 2009 u Rostlinného roztiratelného tuku. Největší pokles ceny byl v roce 2007 u Rajských jablek červených kulatých.
 
 ### Výzkumná otázka č. 4  
 **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**  
   
 Je vytvořena tabulka, která nám ukazuje v daném roce rozdíl o kolik narostla cena vůči mzdě. Tabulka je vytvořena pro každé odvětví a komoditu. Uvedený údaj je rozdíl nárůstu mzdy a cen potraviny.  
-**Odpověď:**  
+#### Odpověď:  
 Vidíme, že vyjma roku 2014 v každém roce byl nárust cen v§či nějakému odvětví vyšší než 10 %.
 
 
@@ -43,5 +43,5 @@ Vidíme, že vyjma roku 2014 v každém roce byl nárust cen v§či nějakému o
 **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?**  
   
 Připravena tabulka ve které jsou vyfiltrovány údaje HDP pro Českou Republiku z tabulky secondary a připojeny údaje s růstem cen a mezd z tabulky primary. Porovnávají se pouze roky kde jsou hodnoty ve všech sloupcích.  
-**Odpověď:**  
+#### Odpověď:  
 Z generované tabulky můžeme vidět, že závislost na změně HDP a ve změnách mezd nebo potravin není.
