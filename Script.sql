@@ -166,21 +166,17 @@ WHERE ranking = 1
 
 -- otázka č. 4	
 SELECT 
-	w_year, 
-	name_industry_branch,
-	difference,
-	name
+	w_year,
+	name_industry_branch
 FROM (SELECT 
 		tpf2.year_table AS w_year, 
-		tpf.name_industry_branch,
-		food_tab.incr_price - round((tpf2.value/tpf.value *100 - 100),2) AS difference,
-		food_tab.name,
+		tpf.name_industry_branch AS name_industry_branch,
+		avg_price - round((tpf2.value/tpf.value *100 - 100),2) AS difference,
 		CASE
-			WHEN (food_tab.incr_price - round((tpf2.value/tpf.value *100 - 100),2))	> 10 THEN 1
+			WHEN (avg_price - round((tpf2.value/tpf.value *100 - 100),2))	> 10 THEN 1
 			ELSE 0
 		END AS more_than_10p
-	FROM ( 
-		SELECT 
+	FROM (SELECT 
 			year_table, value, name_industry_branch
 		FROM t_jakub_bocek_project_sql_primary_final
 		GROUP BY year_table, name_industry_branch) tpf 
@@ -192,25 +188,33 @@ FROM (SELECT
 		ON tpf.year_table + 1 = tpf2.year_table 
 		AND tpf.name_industry_branch = tpf2.name_industry_branch 
 	JOIN (SELECT 
-			tpf4.year_table AS f_year, 
-			tpf3.name,
-			round((tpf4.avg_price/tpf3.avg_price * 100 - 100),2) AS incr_price
+			f_year,
+			round(avg(incr_price),2) AS avg_price
 		FROM (SELECT 
-				year_table,
-				name,
-				avg_price 
-			FROM t_jakub_bocek_project_sql_primary_final
-			GROUP BY year_table, name) tpf3 
-		JOIN (SELECT 
-				year_table,
-				name,
-				avg_price 
-			FROM t_jakub_bocek_project_sql_primary_final
-			GROUP BY year_table, name) tpf4
-			ON tpf3.year_table + 1 = tpf4.year_table 
-			AND tpf3.name = tpf4.name
-		ORDER BY tpf3.year_table, tpf3.name) food_tab
-		ON food_tab.f_year = tpf2.year_table) tab
+				tpf4.year_table AS f_year, 
+				tpf3.name,
+				round((tpf4.avg_price/tpf3.avg_price * 100 - 100),2) AS incr_price
+			FROM (SELECT 
+					year_table,
+					name,
+					avg_price 
+				FROM t_jakub_bocek_project_sql_primary_final
+				GROUP BY year_table, name) tpf3 
+			JOIN (SELECT 
+					year_table,
+					name,
+					avg_price 
+				FROM t_jakub_bocek_project_sql_primary_final
+				GROUP BY year_table, name) tpf4
+				ON tpf3.year_table + 1 = tpf4.year_table 
+				AND tpf3.name = tpf4.name
+			WHERE round((tpf4.avg_price/tpf3.avg_price * 100 - 100),2) > 0
+			ORDER BY tpf3.year_table, tpf3.name) tab
+		WHERE f_year IN (SELECT 
+				DISTINCT year_table 
+			FROM t_jakub_bocek_project_sql_primary_final)
+		GROUP BY f_year) apt
+		ON tpf.year_table + 1 = apt.f_year) fin_tab
 WHERE more_than_10p = 1
 
 -- otázka č. 5
