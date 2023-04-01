@@ -63,8 +63,8 @@ Tabulka je vytvořena pro každé odvětví a komoditu. Uvedený údaj je rozdí
 a cen potraviny. 
 
 #### Odpověď:  
-Ano existuje rok kdy došlo k nárustu cen o 10 a více % vůči minimálně jednomu odvětví,  
-a k tomu došlo vyjma roku 2014 ve všech letech, tedy 2007, 2008, 2009, 2010, 2011,  
+Ano existuje rok, kdy došlo k nárustu cen o 10 a více % minimálně vůči jednomu odvětví,  
+a k tomu došlo vyjma roku 2014 ve všech ostatních letech, tedy 2007, 2008, 2009, 2010, 2011,  
 2012, 2013, 2015, 2016, 2017 a 2018.
 
 ### Výzkumná otázka č. 5  
