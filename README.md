@@ -1,6 +1,7 @@
 # Dokumentace k projektu SQL
+ 
 
-## Vytvořené tabulky  
+# Vytvořené tabulky  
 
 ### Tabulka č.1  
 Na tabulku czechia_payroll byly připojeny vedlejší tabulky czechia_payroll pro popis  
