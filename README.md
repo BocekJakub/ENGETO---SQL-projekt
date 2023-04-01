@@ -3,11 +3,11 @@
 ## Vytvořené tabulky  
 
 ### Tabulka č.1  
-Na tabulku czechia_payroll byly připojeny vedlejší tabulky czechia_payroll pro popis 
-hodnot ve sloupcích a připojena tabulka cen ke každé průměrné mzdě pro možnost porovnání. 
-Z tabulky mezd vybrány pouze údaje mezd. Ceny jsou zprůměrovány z hodnot za celou republiku. 
-Z tabulky cen připojeno jméno položky, rok ceny a průměrná cena. Propojení tabulek mzdy 
-a cen je přes rok sběru dat. Ve výsledné tabulce je uvedeno id zaměstnavatele, hodnota mzdy, 
+Na tabulku czechia_payroll byly připojeny vedlejší tabulky czechia_payroll pro popis  
+hodnot ve sloupcích a připojena tabulka cen ke každé průměrné mzdě pro možnost porovnání.  
+Z tabulky mezd vybrány pouze údaje mezd. Ceny jsou zprůměrovány z hodnot za celou republiku.  
+Z tabulky cen připojeno jméno položky, rok ceny a průměrná cena. Propojení tabulek mzdy  
+a cen je přes rok sběru dat. Ve výsledné tabulce je uvedeno id zaměstnavatele, hodnota mzdy,  
 jednotka mzdy, pojmenování průměrné hrubé mzdy, údaj o jakou mzdu jde, odvětví, rok odečtu,  
 jméno produktu a průměrná cena v daném roce.  
 
@@ -30,7 +30,8 @@ Nejvícekrát došlo ke snížení mzdy v oblasti těžby a dobívání. Co se t
 byl 2013, kdy se snižovalo v 11 odvětvích.  
  
 ### Výzkumná otázka č. 2  
-**Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**  
+**Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období  
+v dostupných datech cen a mezd?**  
   
 Tabulka je vytvořena, aby ukazovala, pro každé odvětví a v daných letech počet produktů, jež si  
 je možné koupit za mzdu.   
@@ -44,9 +45,9 @@ dovolit koupit cca 750 kc chleba a cca 800-900 litrů mléka.
 ### Výzkumná otázka č. 3  
 **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuálně meziroční nárůst)?**  
   
-Zde jsou připraveny dvě tabulky, a to pro oblast případného poklesu, tak čistě jen nárustu. 
+Zde jsou připraveny dvě tabulky, a to pro oblast případného poklesu, tak čistě jen nárustu.  
 V případě poklesu cen vidíme, kolik procentuálně stojí komodita s největším poklesem oproti  
-předchozímu roku. Např. v roce 2008 stojí konzumní brambory 76,45% ceny z roku 2007. V případě, 
+předchozímu roku. Např. v roce 2008 stojí konzumní brambory 76,45% ceny z roku 2007. V případě,  
 že nás zajímá zdražení, tak použijeme SQL pro druhou tabulku.  
  
 #### Odpověď:  
@@ -54,7 +55,8 @@ Nejnižší nárůst byl v 2009 u Rostlinného roztiratelného tuku. Největší
 v roce 2007 u Rajských jablek červených kulatých.
 
 ### Výzkumná otázka č. 4  
-**Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**  
+**Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd  
+(větší než 10 %)?**  
   
 Je vytvořena tabulka, která nám ukazuje v daném roce rozdíl o kolik narostla cena vůči mzdě.  
 Tabulka je vytvořena pro každé odvětví a komoditu. Uvedený údaj je rozdíl nárůstu mzdy  
@@ -66,7 +68,9 @@ a k tomu došlo vyjma roku 2014 ve všech letech, tedy 2007, 2008, 2009, 2010, 2
 2012, 2013, 2015, 2016, 2017 a 2018.
 
 ### Výzkumná otázka č. 5  
-**Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?**  
+**Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji  
+v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce  
+výraznějším růstem?**  
   
 Připravena tabulka ve které jsou vyfiltrovány údaje HDP pro Českou Republiku z tabulky  
 secondary a připojeny údaje s růstem cen a mezd z tabulky primary. Porovnávají se pouze  
