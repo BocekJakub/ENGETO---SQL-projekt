@@ -15,9 +15,10 @@ jméno produktu a průměrná cena v daném roce.
 Na tabulku economies připojena tabulka countries a odstraněno jméno země z economies  
 a přejmenována populace na populace v roce.  
 
-## Výzkumné otázky  
+# Výzkumné otázky  
 
-### Výzkumná otázka č. 1  
+### Výzkumná otázka č. 1 
+
 **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**  
   
 Tabulka je vytvořena, aby ukazovala, v kterém odvětví a roce došlo k poklesu mezd v ostatních  
@@ -29,7 +30,8 @@ bychom měli údaje o zaměstnancích a jejich ukončení/zahájení pracovního
 Nejvícekrát došlo ke snížení mzdy v oblasti těžby a dobívání. Co se týče let, tak nejhorší rok  
 byl 2013, kdy se snižovalo v 11 odvětvích.  
  
-### Výzkumná otázka č. 2  
+### Výzkumná otázka č. 2 
+
 **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období  
 v dostupných datech cen a mezd?**  
   
@@ -42,7 +44,8 @@ v obou vymezených letech, kde si mohou koupit chleba kolem cca 2 750 kusů a ml
 Nejhůře je na tom oblast Ubytování, stravování a pohostinství, která si v daných letech mohlo  
 dovolit koupit cca 750 kc chleba a cca 800-900 litrů mléka.
 
-### Výzkumná otázka č. 3  
+### Výzkumná otázka č. 3 
+
 **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuálně meziroční nárůst)?**  
   
 Zde jsou připraveny dvě tabulky, a to pro oblast případného poklesu, tak čistě jen nárustu.  
@@ -54,20 +57,21 @@ předchozímu roku. Např. v roce 2008 stojí konzumní brambory 76,45% ceny z r
 Nejnižší nárůst byl v 2009 u Rostlinného roztiratelného tuku. Největší pokles ceny byl  
 v roce 2007 u Rajských jablek červených kulatých.
 
-### Výzkumná otázka č. 4  
+### Výzkumná otázka č. 4 
+
 **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd  
 (větší než 10 %)?**  
   
-Je vytvořena tabulka, která nám ukazuje v daném roce rozdíl o kolik narostla cena vůči mzdě.  
-Tabulka je vytvořena pro každé odvětví a komoditu. Uvedený údaj je rozdíl nárůstu mzdy  
-a cen potraviny. 
+Nejprve je v každém roce vypočten nárůst cen potravin a ten je pro každý rok zprůměrován.  
+Následně je porovnáno v každém roce nárůst platu každého odvětví a průmerný růst ceny potravin.  
+Výsledná tabulka vypisuje rok a odvětví kdy ceny narostly o 10% a více. 
 
 #### Odpověď:  
 Ano existuje rok, kdy došlo k nárustu cen o 10 a více % minimálně vůči jednomu odvětví,  
-a k tomu došlo vyjma roku 2014 ve všech ostatních letech, tedy 2007, 2008, 2009, 2010, 2011,  
-2012, 2013, 2015, 2016, 2017 a 2018.
+a k tomu došlo v letech: 2008, 2010, 2011, 2013, 2017 a 2018.
 
-### Výzkumná otázka č. 5  
+### Výzkumná otázka č. 5 
+
 **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji  
 v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce  
 výraznějším růstem?**  
