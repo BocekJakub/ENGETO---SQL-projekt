@@ -76,7 +76,7 @@ FROM
 			name_industry_branch
 		FROM t_jakub_bocek_project_sql_primary_final 
 		GROUP BY year_table, name_industry_branch 
-		ORDER BY name_industry_branch, year_table 
+		-- ORDER BY name_industry_branch, year_table 
 		) spf2 
 		ON spf.name_industry_branch = spf2.name_industry_branch
 		AND spf.year_table + 1 = spf2.year2
@@ -209,7 +209,8 @@ FROM (SELECT
 				ON tpf3.year_table + 1 = tpf4.year_table 
 				AND tpf3.name = tpf4.name
 			WHERE round((tpf4.avg_price/tpf3.avg_price * 100 - 100),2) > 0
-			ORDER BY tpf3.year_table, tpf3.name) tab
+			-- ORDER BY tpf3.year_table, tpf3.name
+			) tab
 		WHERE f_year IN (SELECT 
 				DISTINCT year_table 
 			FROM t_jakub_bocek_project_sql_primary_final)
